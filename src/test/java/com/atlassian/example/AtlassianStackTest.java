@@ -1,4 +1,4 @@
-package com.myorg;
+package com.atlassian.example;
 
 import software.amazon.awscdk.core.App;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -17,7 +17,7 @@ public class AtlassianStackTest {
     @Test
     public void testStack() throws IOException {
         App app = new App();
-        AtlassianStackStack stack = new AtlassianStackStack(app, "test");
+        AtlassianDatabaseStack stack = new AtlassianDatabaseStack(app, "test");
 
         // synthesize the stack to a CloudFormation template and compare against
         // a checked-in JSON file.
